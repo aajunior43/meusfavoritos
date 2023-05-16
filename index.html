@@ -7,17 +7,8 @@
 			background-color: #F8DEBD;
 			color: #6A0573;
 			font-family: Arial, sans-serif;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
 			margin: 0;
-			padding: 0;
-		}
-
-		.container {
-			text-align: center;
+			padding: 20px;
 		}
 
 		h1 {
@@ -27,14 +18,14 @@
 			margin-bottom: 30px;
 			padding: 10px;
 			border-radius: 5px;
+			text-align: center;
 		}
 
 		.button-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-			grid-gap: 20px;
-			justify-items: center;
+			display: flex;
+			flex-direction: column;
 			align-items: center;
+			gap: 20px;
 		}
 
 		button {
@@ -46,8 +37,6 @@
 			font-size: 16px;
 			font-weight: bold;
 			cursor: pointer;
-			margin-right: 10px;
-			margin-bottom: 10px;
 			transition: all 0.3s ease;
 		}
 
@@ -59,9 +48,8 @@
 	</style>
 </head>
 <body>
-	<div class="container">
-		<h1>Meus favoritos - Aleksandro Alves Da Rocha Junior</h1>
-		<div class="button-grid">
+	<h1>Meus favoritos - Aleksandro Alves Da Rocha Junior</h1>
+	<div class="button-grid">
 			<button onclick="window.open('https://mail.google.com/mail/u/0/h', '_blank')">Gmail</button>
 			<button onclick="window.open('https://www.google.com.br/alerts', '_blank')">Google Alerts - Envia alerta de noticias pelo email</button>
 			<button onclick="window.open('https://trends.google.com.br/trends/?geo=BR', '_blank')">Google Trends - Coisas mais pesquisadas no momento</button>
